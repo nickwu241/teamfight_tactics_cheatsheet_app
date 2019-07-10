@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "525460737108",
+    "firebase_url": "https://wu-nick-tft.firebaseio.com",
+    "project_id": "wu-nick-tft",
+    "storage_bucket": "wu-nick-tft.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525460737108:android:75ed02eb88e96bec",
+        "android_client_info": {
+          "package_name": "wu.nick.tft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525460737108-pc2umsojbucu4udhn1r63sd4h9ugrt1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChcH6lpZIbHasSMVzwqr307AD4OUwRJ-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525460737108-pc2umsojbucu4udhn1r63sd4h9ugrt1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
