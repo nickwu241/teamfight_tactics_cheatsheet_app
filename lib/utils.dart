@@ -24,12 +24,12 @@ class AssetPath {
     return 'assets/sprites/$ending';
   }
 
-  static String forPatch(patch) {
+  static String forPatch(String patch) {
     return 'assets/data/patches/$patch.md';
   }
 
-  static String forImage(imageName) {
-    return 'assets/images/$imageName.jpg';
+  static String forImage(String imageName) {
+    return 'assets/images/$imageName.png';
   }
 }
 

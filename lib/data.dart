@@ -77,7 +77,6 @@ class Data {
     String keyword = '',
   }) {
     final result = _getChampionListByKeyword(keyword);
-    print(result.map((c) => c.name));
     switch (sortBy) {
       case SortType.cost:
         return result..sort(_ChampionSort.byCost);

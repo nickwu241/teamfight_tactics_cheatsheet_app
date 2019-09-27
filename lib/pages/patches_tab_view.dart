@@ -11,14 +11,17 @@ class PatchesTabView extends StatefulWidget {
 }
 
 class _PatchesTabViewState extends State<PatchesTabView> {
-  static const _patchLabels = [
-    '9.16 (August 14)',
-    '9.15B (August 7)',
-    '9.15 (July 31)',
-    '9.14B (July 24)',
-    '9.14 (July 17)'
+  static const _patchKeys = [
+    '9.19',
+    '9.18',
+    '9.17',
+    '9.16B',
+    '9.16',
+    '9.15B',
+    '9.15',
+    '9.14B',
+    '9.14'
   ];
-  static const _patchKeys = ['9.16', '9.15B', '9.15', '9.14B', '9.14'];
 
   final ScrollController _scrollController = ScrollController();
 
@@ -66,13 +69,13 @@ class _PatchesTabViewState extends State<PatchesTabView> {
 
   Widget _buildPatchCips() {
     return Wrap(
-      children: List<Widget>.generate(_patchLabels.length, (i) {
+      children: List<Widget>.generate(_patchKeys.length, (i) {
         return Padding(
           padding: const EdgeInsets.fromLTRB(0.0, 8.0, 8.0, 0.0),
           child: ChoiceChip(
             materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
             padding: EdgeInsets.zero,
-            label: Text(_patchLabels[i]),
+            label: Text(_patchKeys[i]),
             labelStyle: TextStyle(color: Colors.white),
             backgroundColor: Colors.grey[500],
             selectedColor: Colors.grey[900],

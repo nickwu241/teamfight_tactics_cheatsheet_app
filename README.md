@@ -27,14 +27,15 @@ This app is built with `Flutter` and uses `Firebase` for analytics.
 1. Make sure `initialTabIndex` in `main.dart` is set to `0`.
 2. If there was a new patch, make sure to update `patches_tab_view.dart`.
 3. If there were new champions, make sure to add assets for `splash/champions`, `sprites/abilities`, `sprites/champions`.
-4. Bump version in `pubspec.yaml`.
-5. Create the new App Bundle by running:
+4. If there were new items, make sure to add assets for `sprites/items`.
+5. Bump version in `pubspec.yaml`.
+6. Create the new App Bundle by running:
 
    ```sh
    rm -rf build && flutter build appbundle
    ```
 
-6. Head to Google Play Console `Teamfight Tactics Cheatsheet > Release Management > App releases`to:
+7. Head to Google Play Console [Teamfight Tactics Cheatsheet > Release Management > App releases](https://play.google.com/apps/publish/?account=7222310874557383570#ManageReleasesPlace:p=wu.nick.tft&appid=4972387927195384433) to:
     - Upload App Bundle `build/app/outputs/bundle/release/app.aab`, open the folder by running:
 
         ```sh

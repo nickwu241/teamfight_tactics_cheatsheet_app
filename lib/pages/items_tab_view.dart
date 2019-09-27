@@ -50,7 +50,7 @@ class _ItemsTabViewState extends State<ItemsTabView> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: Data.baseItems
-                        .take(4)
+                        .take(5)
                         .map((item) => ItemGridTile(
                               item,
                               borderColor: Colors.grey,
@@ -62,7 +62,7 @@ class _ItemsTabViewState extends State<ItemsTabView> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: Data.baseItems
-                        .skip(4)
+                        .skip(5)
                         .map((item) => ItemGridTile(
                               item,
                               borderColor: Colors.grey,
