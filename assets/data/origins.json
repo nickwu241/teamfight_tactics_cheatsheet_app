@@ -1,1 +1,224 @@
-{"demon": {"key": "demon", "name": "Demon", "description": "Demon basic attacks have a 40% chance to burn 20 mana from their target and return mana to the attacker.", "bonuses": [{"needed": 2, "effect": "Return 15 mana"}, {"needed": 4, "effect": "Return 30 mana"}, {"needed": 6, "effect": "Return 45 mana"}]}, "dragon": {"key": "dragon", "name": "Dragon", "description": null, "bonuses": [{"needed": 2, "effect": "Dragons are immune to 75% Magic damage"}]}, "exile": {"key": "exile", "name": "Exile", "description": null, "bonuses": [{"needed": 1, "effect": "If an Exile has no adjacent allies at the start of combat, they gain a shield equal to a 100% max health"}]}, "glacial": {"key": "glacial", "name": "Glacial", "description": "On hit, Glacials have a chance to stun for 1.5s.", "bonuses": [{"needed": 2, "effect": "20% chance"}, {"needed": 4, "effect": "33% chance"}, {"needed": 6, "effect": "50% chance"}]}, "hextech": {"key": "hextech", "name": "Hextech", "description": "When combat begins, the ally team launches and detonates a pulse bomb, temporarily disabling nearby enemy items for 5 seconds.", "bonuses": [{"needed": 2, "effect": "Within 1 hex"}, {"needed": 4, "effect": "Within 2 hexes"}]}, "imperial": {"key": "imperial", "name": "Imperial", "description": "Imperials deal Double Damage.", "bonuses": [{"needed": 2, "effect": "1 random Imperial"}, {"needed": 4, "effect": "All Imperials"}]}, "noble": {"key": "noble", "name": "Noble", "description": "Nobles grant +50 Armor and Magic Resist and heal for 30 on hit.", "bonuses": [{"needed": 3, "effect": "1 random ally"}, {"needed": 6, "effect": "All allies"}]}, "ninja": {"key": "ninja", "name": "Ninja", "description": "The Ninja Trait is only active when you have exactly 1 or 4 Ninjas.", "bonuses": [{"needed": 1, "effect": "Ninja gains +50 Attack Damage and Ability Power"}, {"needed": 4, "effect": "All Ninjas gain +80 Attack Damage and Ability Power"}]}, "pirate": {"key": "pirate", "name": "Pirate", "description": null, "bonuses": [{"needed": 3, "effect": "Earn up to 4 additional gold after combat against another player (average 1.75g per chest)"}]}, "phantom": {"key": "phantom", "name": "Phantom", "description": null, "bonuses": [{"needed": 2, "effect": "Curse a random enemy at the start of combat, setting their HP to 100"}]}, "robot": {"key": "robot", "name": "Robot", "description": null, "bonuses": [{"needed": 1, "effect": "Robots start combat at full mana"}]}, "void": {"key": "void", "name": "Void", "description": "Basic Attacks and Spells from select Void champions deal true damage.", "bonuses": [{"needed": 2, "effect": "One random void champion"}, {"needed": 4, "effect": "All Void champions"}]}, "wild": {"key": "wild", "name": "Wild", "description": "Attacks generate stacks of Fury (up to 5). Each stack of Fury grants 10% Attack Speed.", "bonuses": [{"needed": 2, "effect": "Wild allies only"}, {"needed": 4, "effect": "All allies and all basic attacks cannot miss"}]}, "yordle": {"key": "yordle", "name": "Yordle", "description": "Attacks against ally Yordles have a chance to miss.", "bonuses": [{"needed": 3, "effect": "30% chance to miss"}, {"needed": 6, "effect": "60% chance to miss"}, {"needed": 9, "effect": "90% chance to miss"}]}}
+{
+  "crystal": {
+    "key": "crystal",
+    "name": "Crystal",
+    "description": "Crystal champions have a maximum amount of damage they can take from a single hit",
+    "bonuses": [
+      {
+        "needed": 2,
+        "effect": "100 Damage"
+      },
+      {
+        "needed": 4,
+        "effect": "60 Damage"
+      }
+    ]
+  },
+  "desert": {
+    "key": "desert",
+    "name": "Desert",
+    "description": "Desert champions penetrate armor.",
+    "bonuses": [
+      {
+        "needed": 2,
+        "effect": "50% Armor Penetration"
+      },
+      {
+        "needed": 4,
+        "effect": "90% Armor Penetration"
+      }
+    ]
+  },
+  "electric": {
+    "key": "electric",
+    "name": "Electric",
+    "description": "Electric champions shock nearby enemies when they deal or receive a critical strike.",
+    "bonuses": [
+      {
+        "needed": 2,
+        "effect": "60 Damage"
+      },
+      {
+        "needed": 3,
+        "effect": "200 Damage"
+      },
+      {
+        "needed": 4,
+        "effect": "500 Damage"
+      }
+    ]
+  },
+  "forest": {
+    "key": "forest",
+    "name": "Forest",
+    "description": null,
+    "bonuses": [
+      {
+        "needed": 3,
+        "effect": "At the start of combat, a random Forest champion makes a copy of themselves."
+      }
+    ]
+  },
+  "glacial": {
+    "key": "glacial",
+    "name": "Glacial",
+    "description": "On hit, Glacials have a chance to stun for 1.5s.",
+    "bonuses": [
+      {
+        "needed": 2,
+        "effect": "20% chance"
+      },
+      {
+        "needed": 4,
+        "effect": "40% chance"
+      },
+      {
+        "needed": 6,
+        "effect": "60% chance"
+      }
+    ]
+  },
+  "inferno": {
+    "key": "inferno",
+    "name": "Inferno",
+    "description": "Spells from Inferno champions burn the area under the target, dealing a percentage of the spell damage as magic damage over 5 seconds.",
+    "bonuses": [
+      {
+        "needed": 3,
+        "effect": "+80% Damage"
+      },
+      {
+        "needed": 6,
+        "effect": "+175% Damage"
+      },
+      {
+        "needed": 9,
+        "effect": "+275% Damage"
+      }
+    ]
+  },
+  "light": {
+    "key": "light",
+    "name": "Light",
+    "description": "When a Light champion dies, all other Light champions gain Attack Speed and are healed for 25% of their Maximum Health.",
+    "bonuses": [
+      {
+        "needed": 3,
+        "effect": "+10% Attack Speed"
+      },
+      {
+        "needed": 6,
+        "effect": "+25% Attack Speed"
+      },
+      {
+        "needed": 9,
+        "effect": "+50% Attack Speed"
+      }
+    ]
+  },
+  "mountain": {
+    "key": "mountain",
+    "name": "Mountain",
+    "description": null,
+    "bonuses": [
+      {
+        "needed": 2,
+        "effect": "At the start of combat, a random ally gains a 1500 stone shield."
+      }
+    ]
+  },
+  "ocean": {
+    "key": "ocean",
+    "name": "Ocean",
+    "description": "All allies gain additional mana every 4 seconds.",
+    "bonuses": [
+      {
+        "needed": 2,
+        "effect": "15 Mana"
+      },
+      {
+        "needed": 4,
+        "effect": "30 Mana"
+      },
+      {
+        "needed": 6,
+        "effect": "50 Mana"
+      }
+    ]
+  },
+  "poison": {
+    "key": "poison",
+    "name": "Poison",
+    "description": null,
+    "bonuses": [
+      {
+        "needed": 3,
+        "effect": "Poison champions inflict a neurotoxin onto enemies, increasing the mana needed for their spells by 50%."
+      }
+    ]
+  },
+  "shadow": {
+    "key": "shadow",
+    "name": "Shadow",
+    "description": "Shadow units deal increased damage for 5 seconds at combat start, refreshed on takedown.",
+    "bonuses": [
+      {
+        "needed": 2,
+        "effect": "+50% Increased Damage, Self Takedown"
+      },
+      {
+        "needed": 4,
+        "effect": "+100% Increased Damage, Any Shadow Takedown"
+      }
+    ]
+  },
+  "steel": {
+    "key": "steel",
+    "name": "Steel",
+    "description": "Steel champions gain damage immunity for a few seconds when they are reduced below 50% health.",
+    "bonuses": [
+      {
+        "needed": 2,
+        "effect": "2 Seconds"
+      },
+      {
+        "needed": 3,
+        "effect": "3 Seconds"
+      },
+      {
+        "needed": 4,
+        "effect": "4 Seconds"
+      }
+    ]
+  },
+  "cloud": {
+    "key": "cloud",
+    "name": "Cloud",
+    "description": "All allies gain Dodge Chance.",
+    "bonuses": [
+      {
+        "needed": 2,
+        "effect": "+15% Chance to Dodge"
+      },
+      {
+        "needed": 3,
+        "effect": "+20% Chance to Dodge"
+      },
+      {
+        "needed": 4,
+        "effect": "+30% Chance to Dodge"
+      }
+    ]
+  },
+  "variable": {
+    "key": "variable",
+    "name": "Variable",
+    "description": null,
+    "bonuses": [
+      {
+        "needed": 1,
+        "effect": "Variable origins are chosen from a set of options and change every match."
+      }
+    ]
+  }
+}

@@ -101,7 +101,7 @@ class Data {
     switch (getType(keyword)) {
       case StringType.champion:
         return [
-          champions.values.firstWhere((c) => CaseIgnore.equals(c.name, keyword))
+          champions.values.firstWhere((c) => CaseIgnore.equals(c.key, keyword))
         ];
       case StringType.cls:
         return champions.values
@@ -169,7 +169,7 @@ class _ChampionSort {
       return c1.cost.compareTo(c2.cost);
     }
 
-    return c1.name.compareTo(c2.name);
+    return c1.key.compareTo(c2.key);
   }
 
   static int byAttackDamage(Champion c1, Champion c2) {
@@ -177,7 +177,7 @@ class _ChampionSort {
       return c1.stats.damage.compareTo(c2.stats.damage);
     }
 
-    return c1.name.compareTo(c2.name);
+    return c1.key.compareTo(c2.key);
   }
 
   static int byAttackSpeed(Champion c1, Champion c2) {
@@ -185,7 +185,7 @@ class _ChampionSort {
       return c1.stats.attackSpeed.compareTo(c2.stats.attackSpeed);
     }
 
-    return c1.name.compareTo(c2.name);
+    return c1.key.compareTo(c2.key);
   }
 
   static int byArmor(Champion c1, Champion c2) {
@@ -193,7 +193,7 @@ class _ChampionSort {
       return c1.stats.armor.compareTo(c2.stats.armor);
     }
 
-    return c1.name.compareTo(c2.name);
+    return c1.key.compareTo(c2.key);
   }
 
   static int byMagicResist(Champion c1, Champion c2) {
@@ -201,7 +201,7 @@ class _ChampionSort {
       return c1.stats.magicResist.compareTo(c2.stats.magicResist);
     }
 
-    return c1.name.compareTo(c2.name);
+    return c1.key.compareTo(c2.key);
   }
 
   static int byHealth(Champion c1, Champion c2) {
@@ -209,6 +209,6 @@ class _ChampionSort {
       return c1.stats.health.compareTo(c2.stats.health);
     }
 
-    return c1.name.compareTo(c2.name);
+    return c1.key.compareTo(c2.key);
   }
 }

@@ -69,7 +69,7 @@ class ChampionListTile extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 2.0),
             child: Text(
-              champion.name,
+              champion.key,
               style: TextStyle(
                 color: UIHelper.borderColorForCost(champion.cost),
                 fontWeight: FontWeight.bold,

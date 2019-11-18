@@ -12,17 +12,7 @@ class PatchesTabView extends StatefulWidget {
 
 class _PatchesTabViewState extends State<PatchesTabView> {
   static const _patchKeys = [
-    '9.21',
-    '9.20',
-    '9.19',
-    '9.18',
-    '9.17',
-    '9.16B',
-    '9.16',
-    '9.15B',
-    '9.15',
-    '9.14B',
-    '9.14'
+    '9.22',
   ];
 
   final ScrollController _scrollController = ScrollController();

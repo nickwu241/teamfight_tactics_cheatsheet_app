@@ -1,6 +1,5 @@
 class Champion {
   String key;
-  String name;
   List<String> classes;
   List<String> origins;
   int cost;
@@ -9,7 +8,6 @@ class Champion {
 
   Champion({
     this.key,
-    this.name,
     this.classes,
     this.origins,
     this.cost,
@@ -20,7 +18,6 @@ class Champion {
   factory Champion.fromJson(Map<String, dynamic> json) {
     return Champion(
       key: json['key'],
-      name: json['name'],
       classes: json['class']?.cast<String>(),
       origins: json['origin']?.cast<String>(),
       cost: json['cost'],

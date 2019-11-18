@@ -13,6 +13,7 @@ class UIHelper {
     // 4: Color(0xFFAD199F),
     4: Colors.purple,
     5: Color(0xFFDAAA29),
+    7: Colors.purpleAccent,
   };
 
   static Widget titleText(String title) {

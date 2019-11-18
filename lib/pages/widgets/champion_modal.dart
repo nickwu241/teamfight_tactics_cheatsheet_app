@@ -21,7 +21,7 @@ class ChampionModal extends StatelessWidget {
           top: 4.0,
           left: 8.0,
           child: Text(
-            champion.name,
+            champion.key,
             style: TextStyle(fontSize: 28.0, fontWeight: FontWeight.bold),
           ),
         ),

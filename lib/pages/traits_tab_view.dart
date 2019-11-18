@@ -124,27 +124,11 @@ class TraitWidget extends StatelessWidget {
                   ),
                 ),
               ),
-              if (trait.key != 'ninja')
-                ...trait.bonuses
-                    .map((bonus) => Padding(
-                        padding: const EdgeInsets.only(left: 4.0),
-                        child: NumberChip(bonus.needed)))
-                    .toList()
-              // Be explicit about needing exactly 1 or 4 ninjas.
-              else ...[
-                Padding(
-                  padding: const EdgeInsets.only(left: 4.0),
-                  child: NumberChip(trait.bonuses[0].needed),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 4.0),
-                  child: Text('or'),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 4.0),
-                  child: NumberChip(trait.bonuses[1].needed),
-                ),
-              ]
+              ...trait.bonuses
+                  .map((bonus) => Padding(
+                      padding: const EdgeInsets.only(left: 4.0),
+                      child: NumberChip(bonus.needed)))
+                  .toList()
             ],
           ),
           Container(height: 2.0),

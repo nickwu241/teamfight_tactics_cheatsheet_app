@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../data.dart';
+import '../models/champion.dart';
 import '../utils.dart';
 import 'ui_helper.dart';
 import 'widgets/champion_avatar_widget.dart';
@@ -53,8 +54,10 @@ class _DropRatesTabViewState extends State<DropRatesTabView> {
             child: Padding(
               padding: const EdgeInsets.all(4.0),
               child: Wrap(
-                children:
-                    _championsByCost[tier].map(_buildChampionAvatar).toList(),
+                children: _championsByCost[tier]
+                    .followedBy(tier == 5 ? [Data.champions['Lux']] : [])
+                    .map(_buildChampionAvatar)
+                    .toList(),
               ),
             ),
           ),
@@ -63,7 +66,7 @@ class _DropRatesTabViewState extends State<DropRatesTabView> {
     );
   }
 
-  Widget _buildChampionAvatar(champion) {
+  Widget _buildChampionAvatar(Champion champion) {
     return ChampionAvatarWidget(champion);
   }
 

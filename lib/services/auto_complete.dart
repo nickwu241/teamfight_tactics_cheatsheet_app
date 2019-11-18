@@ -16,8 +16,8 @@ class AutoComplete {
 
   static List<String> withChampionOrTraitPrefix(String prefix) {
     return Data.champions.values
-        .where((champion) => CaseIgnore.startsWith(champion.name, prefix))
-        .map((champion) => champion.name)
+        .where((champion) => CaseIgnore.startsWith(champion.key, prefix))
+        .map((champion) => champion.key)
         .toList()
           ..addAll(_withTraitPrefixNoSort(prefix))
           ..sort();
