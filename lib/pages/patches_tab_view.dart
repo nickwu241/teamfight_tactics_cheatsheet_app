@@ -12,6 +12,8 @@ class PatchesTabView extends StatefulWidget {
 
 class _PatchesTabViewState extends State<PatchesTabView> {
   static const _patchKeys = [
+    '9.24B',
+    '9.24',
     '9.23',
     '9.22',
   ];
