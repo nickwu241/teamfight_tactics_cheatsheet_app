@@ -1,7 +1,7 @@
 name: tft_cheatsheet_app
 description: A Teamfight Tactics information cheatsheet!
 
-version: 3.0.0+23
+version: 3.1.0+24
 
 environment:
   sdk: ">=2.2.2 <3.0.0"
