@@ -229,7 +229,11 @@ class CombinedItemBar extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(1.0, 1.0, 6.0, 1.0),
             child: ItemIcon(combinedItem),
           ),
-          Flexible(child: Text(combinedItem.bonus)),
+          Flexible(
+              child: Text(
+            combinedItem.bonus,
+            style: TextStyle(fontSize: 10.0),
+          )),
         ],
       ],
     );

@@ -79,7 +79,7 @@ class Data {
     final result = _getChampionListByKeyword(keyword);
     switch (sortBy) {
       case SortType.cost:
-        return result..sort(_ChampionSort.byCost);
+        return result..sort(_ChampionSort.byCostReversed);
       case SortType.attackdamage:
         return result..sort(_ChampionSort.byAttackDamage);
       case SortType.attackspeed:
@@ -164,9 +164,9 @@ enum StringType { champion, cls, origin }
 enum SortType { cost, attackdamage, attackspeed, armor, magicresist, health }
 
 class _ChampionSort {
-  static int byCost(Champion c1, Champion c2) {
+  static int byCostReversed(Champion c1, Champion c2) {
     if (c1.cost.compareTo(c2.cost) != 0) {
-      return c1.cost.compareTo(c2.cost);
+      return -c1.cost.compareTo(c2.cost);
     }
 
     return c1.key.compareTo(c2.key);

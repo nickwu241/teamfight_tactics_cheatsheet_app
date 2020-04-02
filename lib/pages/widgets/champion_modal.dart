@@ -104,7 +104,7 @@ class ChampionModal extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 4.0, bottom: 2.0),
                 child: Row(
                   children: <Widget>[
-                    Image.asset(AssetPath.forTrait(trait.toLowerCase())),
+                    Image.asset(AssetPath.forTrait(trait)),
                     Text(' $trait'),
                   ],
                 ),
@@ -150,7 +150,8 @@ class ChampionModal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double cardWidth = MediaQuery.of(context).size.width * 0.8;
-    final bool championHasMana = champion.ability.manaCost != null;
+    final bool championHasMana =
+        champion.ability.manaCost != null && champion.ability.manaCost != 0;
 
     return Theme(
       data: ThemeData.dark().copyWith(

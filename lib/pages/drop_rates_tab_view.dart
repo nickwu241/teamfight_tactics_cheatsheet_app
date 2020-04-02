@@ -54,10 +54,8 @@ class _DropRatesTabViewState extends State<DropRatesTabView> {
             child: Padding(
               padding: const EdgeInsets.all(4.0),
               child: Wrap(
-                children: _championsByCost[tier]
-                    .followedBy(tier == 5 ? [Data.champions['Lux']] : [])
-                    .map(_buildChampionAvatar)
-                    .toList(),
+                children:
+                    _championsByCost[tier].map(_buildChampionAvatar).toList(),
               ),
             ),
           ),

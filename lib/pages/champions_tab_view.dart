@@ -90,7 +90,7 @@ class ChampionListTile extends StatelessWidget {
                         backgroundColor: Colors.grey[700],
                         radius: 10.0,
                         child: Image.asset(
-                          AssetPath.forTrait(trait.toLowerCase()),
+                          AssetPath.forTrait(trait),
                           color: Colors.white,
                           width: 16.0,
                           height: 16.0,

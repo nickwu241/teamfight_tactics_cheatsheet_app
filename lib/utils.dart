@@ -17,7 +17,8 @@ class AssetPath {
     return 'assets/sprites/items/$itemKey.png';
   }
 
-  static String forTrait(String traitKey) {
+  static String forTrait(String trait) {
+    final traitKey = trait.replaceAll(RegExp('[ -]'), '').toLowerCase();
     final ending = Data.isClass(traitKey)
         ? 'classes/$traitKey.png'
         : 'origins/$traitKey.png';

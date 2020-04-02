@@ -12,9 +12,15 @@ import 'pages/traits_tab_view.dart';
 import 'services/analytics.dart';
 
 void main() async {
+  // Must be run before Data.initialize().
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Load our static data.
   await Data.initialize();
+
   // Pin to portrait mode.
   await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+
   runApp(MyApp());
 }
 
