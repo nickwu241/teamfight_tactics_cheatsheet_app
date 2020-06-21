@@ -3,7 +3,6 @@ import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../data.dart';
-import '../services/analytics.dart';
 
 class PatchesTabView extends StatefulWidget {
   @override
@@ -12,10 +11,7 @@ class PatchesTabView extends StatefulWidget {
 
 class _PatchesTabViewState extends State<PatchesTabView> {
   static const _patchKeys = [
-    '10.9',
-    '10.8',
-    '10.7',
-    '10.6',
+    '10.12',
   ];
 
   final ScrollController _scrollController = ScrollController();
@@ -94,7 +90,6 @@ class _PatchesTabViewState extends State<PatchesTabView> {
           : MarkdownBody(
               data: _markdownData,
               onTapLink: (String url) {
-                Analytics.logOpenUrlEvent(url);
                 launch(url);
               },
               styleSheet:

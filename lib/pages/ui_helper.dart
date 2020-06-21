@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../models/champion.dart';
-import '../services/analytics.dart';
 import 'widgets/champion_modal.dart';
 
 class UIHelper {
@@ -31,12 +30,11 @@ class UIHelper {
   }
 
   static void showChampionModal(BuildContext context, Champion champion) {
-    Analytics.logChampionModalEvent(champion.key, true);
     showDialog(
       context: context,
       builder: (context) {
         return Dialog(child: ChampionModal(champion));
       },
-    ).then((_) => Analytics.logChampionModalEvent(champion.key, false));
+    );
   }
 }

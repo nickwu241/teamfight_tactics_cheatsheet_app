@@ -2,8 +2,6 @@ import 'dart:async';
 
 import 'package:rxdart/rxdart.dart';
 
-import 'services/analytics.dart';
-
 class ItemsBloc {
   BehaviorSubject<String> _sisc = BehaviorSubject<String>.seeded('');
   Stream<String> get selectItemStream => _sisc.stream;
@@ -17,7 +15,6 @@ class ItemsBloc {
   }
 
   void selectItem(String itemKey) {
-    Analytics.logItemClickEvent(itemKey);
     if (itemKey == _sisc.value) {
       _sisc.add('');
     } else {

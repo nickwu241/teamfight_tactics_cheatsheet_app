@@ -1,7 +1,8 @@
 name: tft_cheatsheet_app
 description: A Teamfight Tactics information cheatsheet!
 
-version: 3.3.0+27
+version: 3.4.0+28
+androidX: true
 
 environment:
   sdk: ">=2.2.2 <3.0.0"
@@ -9,8 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^0.4.0+8
-  firebase_analytics: ^4.0.2
   flutter_markdown: ^0.2.0
   flutter_typeahead: ^1.6.1
   provider: ^3.0.0+1

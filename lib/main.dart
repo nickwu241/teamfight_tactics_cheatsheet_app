@@ -9,7 +9,6 @@ import 'pages/drop_rates_tab_view.dart';
 import 'pages/items_tab_view.dart';
 import 'pages/patches_tab_view.dart';
 import 'pages/traits_tab_view.dart';
-import 'services/analytics.dart';
 
 void main() async {
   // Must be run before Data.initialize().
@@ -88,9 +87,6 @@ class _MainAppState extends State<MainApp> with SingleTickerProviderStateMixin {
       Provider.of<ItemsBloc>(context).deselectAll();
     });
     _tabController.addListener(() {
-      if (!_tabController.indexIsChanging) {
-        Analytics.logScreenSwitch(tabIndexToNameMap[_tabController.index]);
-      }
       Provider.of<ItemsBloc>(context).deselectAll();
     });
   }
